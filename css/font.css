@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+@font-face{
+    font-family: "grotesque-bold";
+    src: url("../font/grotesque-bold.otf"),
+         url("../font/grotesque-bold.otf") format("opentype");
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face{
+    font-family: "grotesque-semibold";
+    src: url("../font/grotesque-semi-bold.otf"),
+         url("../font/grotesque-semi-bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face{
+    font-family: "grotesque-medium";
+    src: url("../font/grotesque-medium.otf"),
+         url("../font/grotesque-medium.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face{
+    font-family: "grotesque-regular";
+    src: url("../font/grotesque-regular.otf"),
+         url("../font/grotesque-regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face{
+    font-family: "grotesque-light";
+    src: url("../font/grotesque-light.otf"),
+         url("../font/grotesque-light.otf") format("opentype");
+    font-weight: inherit;
+    font-style: normal;
+}
