@@ -1,0 +1,147 @@
+@charset "utf-8";
+
+/* header */
+#header {
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+}
+#header #gnb{
+    display: flex;
+    justify-content: center;
+}
+#header #gnb .header__hambuger{
+    width: 90px;
+    height: 90px;
+    position: relative;
+    display: block;
+}
+#header #gnb .header__hambuger::before,
+#header #gnb .header__hambuger::after{
+    content: "";
+    display: block;
+    background-color: #fff;
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#header #gnb .header__hambuger::before{
+    top: 44%;
+}
+#header #gnb .header__hambuger::after{
+    bottom: 46%;
+}
+#header #gnb ul{
+    display: flex;
+    align-items: center;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+#header #gnb li{
+    color: #fff;
+    font-family: "grotesque-regular";
+    margin-right: 30px;
+}
+#header #gnb li:first-child{
+    margin-left: 30px;
+}
+
+#header .logo{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+#header .gnb-sub{
+    display: flex;
+}
+#header .gnb-sub li a,
+#header .gnb-sub li button{
+    width: 90px;
+    height: 90px;
+    display: block;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    line-height: 90px;
+    color: #fff;
+    font-family: "grotesque-regular";
+}
+#header .gnb-sub .cart a{
+    position: relative;
+}
+#header .gnb-sub .cart span{
+    position: absolute;
+    top: -6px;
+    right: 16px;
+    font-size: 11px;
+    font-family: "grotesque-medium";
+}
+
+/* banner */
+#banner{
+    background-image: url("../images/collections/BossHomeLife-Home_1920x1200.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -100;
+}
+#banner .banner__container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px -400px 120px -100px rgba(0, 0, 0, 0.3) inset;
+}
+#banner h1{
+    position: absolute;
+    left: 50%;
+    z-index: 100;
+    bottom: 160px;
+    transform: translateX(-50%);
+    font-size: 60px;
+    font-family: "grotesque-bold";
+    line-height: 66px;
+    letter-spacing: -1.5px;
+    color: #fff;
+}
+#banner .banner__linkBox{
+    position: absolute;
+    left: 50%;
+    bottom: 80px;
+    transform: translateX(-50%);
+}
+#banner .banner__linkBox li{
+    display: inline-block;
+    background-color: inherit;
+    margin-left: 5px;
+}
+#banner .banner__linkBox li:first-child{
+    margin: 0;
+}
+#banner .banner__linkBox li a{
+    color: #fff;
+    border: 1px solid #fff;
+    font-family: "grotesque-semibold";
+    margin-top: 50px;
+    width: 157.5px;
+    height: 43px;
+    display: block;
+    text-align: center;
+    line-height: 43px;
+    transition: 0.5s ease;
+}
+#banner .banner__linkBox li a:focus,
+#banner .banner__linkBox li a:hover{
+    background-color: #252525;
+    border-color: #252525;
+}
