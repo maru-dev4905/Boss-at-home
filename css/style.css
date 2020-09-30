@@ -171,14 +171,65 @@ main{
     margin-bottom: 44px;
     font-family: "grotesque-regular";
 }
-#intro a{
-    text-align: center;
-    border: 1px solid #ccc;
-    width: 160px;
-    height: 45px;
-    display: block;
+
+/* section collection */
+#collection{
+    padding: 100px 0;
+    background-color: #EDECE8;
+}
+#collection .collection__container{
+    width: 95%;
     margin: 0 auto;
-    line-height: 45px;
-    color: #252525;
-    font-family: "grotesque-medium";
+}
+.collection__container .collection__contentBox{
+    display: flex;
+    justify-content: space-between;
+}
+.collection__contentBox a{
+    width: calc(33.3333333% - 25px);
+    margin-right: 25px;
+    position: relative;
+    padding: 0 0 20% 0;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.collection__contentBox a::before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.5s ease;
+}
+.collection__contentBox a:focus::before,
+.collection__contentBox a:hover::before{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.collection__contentBox a:nth-child(1){
+    background-image: url("../images/collections/hero_eafa3f87-3f78-4352-86ac-139dfef3512a_1920x1200.jpg");
+}
+.collection__contentBox a:nth-child(2){
+    background-image: url("../images/collections/Boss_atHome_Product_-_Ola2_1920x1200.jpg");
+}
+.collection__contentBox a:nth-child(3){
+    background-image: url("../images/collections/Boss_atHome_Product_-_Bodie2_1920x1200.jpg");
+}
+.collection__contentBox h2{
+    font-size: 30px;
+    font-family: "grotesque-semibold";
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+    color: #fff;
+}
+#collection .sec_btn{
+    margin-top: 50px;
+    width: 220px;
 }

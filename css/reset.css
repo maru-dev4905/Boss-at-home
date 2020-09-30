@@ -53,3 +53,21 @@ button{
     cursor: pointer;
     outline: none;
 }
+.sec_btn{
+    text-align: center;
+    border: 1px solid #ccc;
+    width: 160px;
+    height: 45px;
+    display: block;
+    margin: 0 auto;
+    line-height: 45px;
+    color: #252525;
+	font-family: "grotesque-medium";
+	transition: 0.5s ease;
+}
+.sec_btn:focus,
+.sec_btn:hover{
+    background-color: #252525;
+	border-color: #252525;
+	color: #fff;
+}
