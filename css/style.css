@@ -154,7 +154,7 @@ main{
 #intro{
     background-color: #EDECE8;
     padding: 100px 0;
-    width: 100%;
+    width: 100vw;
 }
 #intro .intro__container{
     width: 90%;
@@ -174,6 +174,7 @@ main{
 
 /* section collection */
 #collection{
+    width: 100vw;
     padding: 100px 0;
     background-color: #EDECE8;
 }
@@ -185,7 +186,7 @@ main{
     display: flex;
     justify-content: space-between;
 }
-.collection__contentBox a{
+.collection__container .collection__contentBox a{
     width: calc(33.3333333% - 25px);
     margin-right: 25px;
     position: relative;
@@ -195,19 +196,17 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.collection__contentBox a::before{
+.collection__container .collection__contentBox a::before{
     content: "";
     display: block;
     position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
-    height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     transition: 0.5s ease;
 }
-.collection__contentBox a:focus::before,
-.collection__contentBox a:hover::before{
+.collection__container .collection__contentBox a:focus::before,
+.collection__container .collection__contentBox a:hover::before{
     background-color: rgba(0, 0, 0, 0.4);
 }
 .collection__contentBox a:nth-child(1){
@@ -219,7 +218,7 @@ main{
 .collection__contentBox a:nth-child(3){
     background-image: url("../images/collections/Boss_atHome_Product_-_Bodie2_1920x1200.jpg");
 }
-.collection__contentBox h2{
+.collection__container .collection__contentBox h2{
     font-size: 30px;
     font-family: "grotesque-semibold";
     text-align: center;
@@ -232,4 +231,46 @@ main{
 #collection .sec_btn{
     margin-top: 50px;
     width: 220px;
+}
+
+/* section products */
+#products{
+    background-color: #EDECE8;
+    padding: 100px 0;
+    width: 100vw;
+}
+#products .products__container{
+    width: 95%;
+    margin: 0 auto;
+}
+#products .products__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#products .products__list li{
+    width: calc(16.66666666666667% - 20px);
+    margin-right: 20px;
+    text-align: center;
+}
+#products .products__list li:last-child{
+    margin-right: 0;
+}
+#products .products__list li img{
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+#products .products__list li h3{
+    font-family: "grotesque-medium";
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+}
+#products .products__list li h4{
+    font-size: 15px;
+    font-family: "grotesque-regular";
+    color: #818178;
+}
+#products .sec_btn{
+    margin-top: 80px;
 }
