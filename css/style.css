@@ -55,6 +55,11 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    transition: 0.5s ease;
+}
+#header .logo:hover,
+#header .logo:focus{
+    opacity: 0.5;
 }
 
 
@@ -243,6 +248,12 @@ main{
     width: 95%;
     margin: 0 auto;
 }
+#products h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: "grotesque-semibold";
+}
 #products .products__list{
     display: flex;
     justify-content: space-between;
@@ -252,6 +263,11 @@ main{
     width: calc(16.66666666666667% - 20px);
     margin-right: 20px;
     text-align: center;
+    transition: 0.5s ease;
+}
+#products .products__list li:focus,
+#products .products__list li:hover{
+    opacity: 0.5;
 }
 #products .products__list li:last-child{
     margin-right: 0;
