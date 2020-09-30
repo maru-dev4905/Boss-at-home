@@ -290,3 +290,53 @@ main{
 #products .sec_btn{
     margin-top: 80px;
 }
+
+/* section about */
+#about{
+    width: 100vw;
+    background-color: #EDECE8;
+    border-top: 1px solid #ccc;
+}
+#about article{
+    display: flex;
+    flex-direction: row;
+    height: 650px;
+}
+#about .about__text{
+    width: 50%;
+    height: 100%;
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#about .about__text h2{
+    font-size: 30px;
+    letter-spacing: -0.5px;
+    line-height: 32px;
+    margin-bottom: 23px;
+    font-family: "grotesque-semibold";
+}
+#about .about__text p{
+    font-size: 17px;
+    line-height: 27px;
+    color: #58574F;
+    margin-bottom: 50px;
+    max-width: 560px;
+}
+#about .about__img{
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#about .about__weare .about__img{
+    background-image: url("../images/files/Boss-atHome-Image-Story---28_1920x1200.jpg");
+}
+#about .about__browse .about__img{
+    background-image: url("../images/files/Boss_atHome_Product_1920x1200.jpg");
+
+}
