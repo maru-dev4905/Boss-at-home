@@ -55,6 +55,11 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    transition: 0.5s ease;
+}
+#header .logo:hover,
+#header .logo:focus{
+    opacity: 0.5;
 }
 
 
@@ -243,6 +248,12 @@ main{
     width: 95%;
     margin: 0 auto;
 }
+#products h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: "grotesque-semibold";
+}
 #products .products__list{
     display: flex;
     justify-content: space-between;
@@ -252,6 +263,11 @@ main{
     width: calc(16.66666666666667% - 20px);
     margin-right: 20px;
     text-align: center;
+    transition: 0.5s ease;
+}
+#products .products__list li:focus,
+#products .products__list li:hover{
+    opacity: 0.5;
 }
 #products .products__list li:last-child{
     margin-right: 0;
@@ -273,4 +289,148 @@ main{
 }
 #products .sec_btn{
     margin-top: 80px;
+}
+
+/* section about */
+#about{
+    width: 100vw;
+    background-color: #EDECE8;
+    border-top: 1px solid #ccc;
+}
+#about article{
+    display: flex;
+    flex-direction: row;
+    height: 650px;
+}
+#about .about__text{
+    width: 50%;
+    height: 100%;
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#about .about__text h2{
+    font-size: 30px;
+    letter-spacing: -0.5px;
+    line-height: 32px;
+    margin-bottom: 23px;
+    font-family: "grotesque-semibold";
+}
+#about .about__text p{
+    font-size: 17px;
+    line-height: 27px;
+    color: #58574F;
+    margin-bottom: 50px;
+    max-width: 560px;
+}
+#about .about__img{
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#about .about__weare .about__img{
+    background-image: url("../images/files/Boss-atHome-Image-Story---28_1920x1200.jpg");
+}
+#about .about__browse .about__img{
+    background-image: url("../images/files/Boss_atHome_Product_1920x1200.jpg");
+}
+
+/* footer */
+#footer{
+    background-color: #EDECE8;
+    border-top: 1px solid #ccc;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+#footer .footer__container{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #ccc;
+}
+.footer__container .footer__link{
+    width: 50%;
+    display: flex;
+}
+.footer__link .footer__socials li{
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    transition: 0.3s ease;
+}
+.footer__link .footer__socials li:last-child{
+    border-bottom: none;
+}
+.footer__link .footer__socials a{
+    display: block;
+    width: 129px;
+    height: 129px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer__container .footer__text{
+    width: 50%;
+}
+.footer__container #fnb{
+    width: 50%;
+    padding: 40px;
+}
+.footer__container #fnb li{
+    margin-bottom: 5px;
+}
+.footer__container #fnb li:last-child{
+    margin: 0;
+}
+.footer__container #fnb li a{
+    color: #818178;
+    font-size: 15px;
+    font-family: "grotesque-regular";
+    transition: 0.3s ease;
+}
+.footer__container #fnb li a:focus,
+.footer__container #fnb li a:hover{
+    color: #252525
+}
+.footer__container .footer__text{
+    padding: 40px;
+    border-left: 1px solid #ccc;
+}
+.footer__container .footer__text h3{
+    font-size: 20px;
+    font-family: "grotesque-regular";
+    letter-spacing: -0.5px;
+    margin-bottom: 20px;
+}
+.footer__container .footer__text a.sec_btn{
+    margin: 0;
+}
+.footer__copyrights{
+    display: flex;
+    align-items: center;
+}
+.footer__copyrights .footer__copyrights__text{
+    padding: 30px 40px;
+    width: 50%;
+    font-size: 13px;
+    color: #818178;
+    font-family: "grotesque-regular";
+}
+.footer__copyrights .footer__copyrights__text2{
+    width: 50%;
+    border-left: 1px solid #ccc;
+    padding: 30px 40px;
+    font-size: 13px;
+    color: #818178;
+    font-family: "grotesque-regular";
+    display: flex;
+    justify-content: space-between;
+}
+.footer__copyrights .footer__copyrights__text2 a{
+    font-size: 15px;
+    font-family: "grotesque-semibold";
 }
