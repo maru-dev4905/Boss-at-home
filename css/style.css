@@ -13,14 +13,14 @@
     display: flex;
     justify-content: center;
 }
-#header #gnb .header__hambuger{
+#header #gnb .header__hambuger-open{
     width: 90px;
     height: 90px;
     position: relative;
     display: block;
 }
-#header #gnb .header__hambuger::before,
-#header #gnb .header__hambuger::after{
+#header #gnb .header__hambuger-open::before,
+#header #gnb .header__hambuger-open::after{
     content: "";
     display: block;
     background-color: #fff;
@@ -30,10 +30,10 @@
     left: 50%;
     transform: translateX(-50%);
 }
-#header #gnb .header__hambuger::before{
+#header #gnb .header__hambuger-open::before{
     top: 44%;
 }
-#header #gnb .header__hambuger::after{
+#header #gnb .header__hambuger-open::after{
     bottom: 46%;
 }
 #header #gnb ul{
@@ -93,6 +93,40 @@
     opacity: 0.5;
 }
 
+/* hambuger menu */
+.menu{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 534px;
+    background-color: #252525;
+    overflow: hidden;
+    height: 100vh;
+    padding: 29px 24px;
+    color: #fff;
+}
+.menu__container{
+    position: relative;
+    height: 100%;
+}
+.menu__container button{
+    margin-bottom: 42px;
+}
+.menu__container .menu__nav li{
+    font-size: 23.4px;
+    font-family: "grotesque-regular";
+    margin: 3px 0 26px 5px;
+}
+.menu__container .menu__nav--small{
+    position: absolute;
+    bottom: 0;
+}
+.menu__container .menu__nav--small li{
+    font-family: "grotesque-regular";
+    margin: 0 0 9px 5px;
+    letter-spacing: -0.5px;
+    font-size: 15px;
+}
 main{
     position: absolute;
     top: 0;
