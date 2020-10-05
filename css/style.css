@@ -187,12 +187,14 @@ main{
     line-height: 66px;
     letter-spacing: -1.5px;
     color: #fff;
+    width: 100%;
+    text-align: center;
 }
 #banner .banner__linkBox{
     position: absolute;
-    left: 50%;
     bottom: 80px;
-    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
 }
 #banner .banner__linkBox li{
     display: inline-block;
@@ -505,4 +507,7 @@ main{
 .footer__copyrights .footer__copyrights__text2 a{
     font-size: 15px;
     font-family: "grotesque-semibold";
+}
+.footer__socials__text{
+    display: none;
 }
